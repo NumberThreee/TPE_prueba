@@ -1,12 +1,10 @@
 <style>
-    /* Cambiar la fuente y el color de fondo */
+    
     body {
-        font-family: Arial, sans-serif; /* Cambia la fuente */
-        background-color: #f0f0f0; /* Cambia el color de fondo */
+        font-family: Arial, sans-serif; 
+        background-color: #f0f0f0; 
     }
-
-    /* Cambiar el color del texto */
-    p {
+      { 
         color: blue; /* Cambia el color del texto */
     }
 </style>
