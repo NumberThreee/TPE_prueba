@@ -1,3 +1,16 @@
+<style>
+    /* Cambiar la fuente y el color de fondo */
+    body {
+        font-family: Arial, sans-serif; /* Cambia la fuente */
+        background-color: #f0f0f0; /* Cambia el color de fondo */
+    }
+
+    /* Cambiar el color del texto */
+    p {
+        color: blue; /* Cambia el color del texto */
+    }
+</style>
+
 # TPE WEB2 - Tres Arroyos - 2023
 
 ##### *Integrantes del grupo:*
