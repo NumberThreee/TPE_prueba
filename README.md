@@ -15,7 +15,7 @@ Es un sistema donde se muestran diferentes tipos de **video juegos** clasificado
 
 Los usuarios van a tener acceso de acuerdo a categorias, un **administrador** podra editar el contenido (agregar - borrar - actualizar - consultar) mientras que los **usuarios comunes** pueden consultar y filtrar bsquedas.
 ### Diagrama entidad relacion (MER)
-
+![](Db_img.png)
 Este diagrama presenta una relacion de 1 a N, donde a los juegos le corresponde **una desarrolladora**. O sea, una desarrolladora puede tener varios juegos, pero no viceversa.
 
 #### Estructura de tabla para la tabla `desarrolladores` 
