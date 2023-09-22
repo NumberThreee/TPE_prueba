@@ -1,14 +1,3 @@
-<style>
-    
-    body {
-        font-family: Arial, sans-serif; 
-        background-color: #f0f0f0; 
-    }
-      { 
-        color: blue; /* Cambia el color del texto */
-    }
-</style>
-
 # TPE WEB2 - Tres Arroyos - 2023
 
 ##### *Integrantes del grupo:*
