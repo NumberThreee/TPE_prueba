@@ -30,14 +30,6 @@ CREATE TABLE `desarrolladores` (
   `enlace` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 ```
-### Clave primaria de **usuarios**: 
-
-```SQL
-ALTER TABLE `usuarios`
-  ADD PRIMARY KEY (`mail`);
-COMMIT;
-```
-
 ### Insertamos datos de prueba a la tabla desarroladores:
 ```SQL
 INSERT INTO `desarrolladores` (`id_desarrollador`, `desarrollador`, `pais`, `año`, `enlace`) VALUES
@@ -67,6 +59,13 @@ CREATE TABLE `usuarios` (
   `clave` varchar(70) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+```
+### Clave primaria de **usuarios**: 
+
+```SQL
+ALTER TABLE `usuarios`
+  ADD PRIMARY KEY (`mail`);
+COMMIT;
 ```
 
 ### Insertamos datos de prueba en la tabla juegos:
