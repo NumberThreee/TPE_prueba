@@ -15,9 +15,9 @@ Es un sistema donde se muestran diferentes tipos de **video juegos** clasificado
 
 Los usuarios van a tener acceso de acuerdo a categorias, un **administrador** podra editar el contenido (agregar - borrar - actualizar - consultar) mientras que los **usuarios comunes** pueden consultar y filtrar bsquedas.
 ### Diagrama entidad relacion (MER)
-![](Db_img.png)
+![](imagentp.png)
 
-Este diagrama presenta una relacion de 1 a N, donde a los juegos le corresponde **una desarrolladora**. O sea, una desarrolladora puede tener varios juegos, pero no viceversa.
+Este diagrama presenta una relacion de 1 a N, donde a los juegos le corresponde **una desarrolladora**. O sea, una desarrolladora puede tener varios juegos, pero no viceversa. Existe una tercera tabla llamada **usuarios**, la cual va a ser la encargada de manejar la sesiones de los usuarios. 
 
 #### Estructura de tabla para la tabla `desarrolladores` 
 #### Creamos la tabla:
@@ -30,6 +30,14 @@ CREATE TABLE `desarrolladores` (
   `enlace` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 ```
+### Clave primaria de **usuarios**: 
+
+```SQL
+ALTER TABLE `usuarios`
+  ADD PRIMARY KEY (`mail`);
+COMMIT;
+```
+
 ### Insertamos datos de prueba a la tabla desarroladores:
 ```SQL
 INSERT INTO `desarrolladores` (`id_desarrollador`, `desarrollador`, `pais`, `año`, `enlace`) VALUES
@@ -51,6 +59,16 @@ CREATE TABLE `juegos` (
   `desarrollador` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 ```
+
+### Creamos la tabla `usuarios`
+```SQL
+CREATE TABLE `usuarios` (
+  `mail` varchar(50) NOT NULL,
+  `clave` varchar(70) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+```
+
 ### Insertamos datos de prueba en la tabla juegos:
 ```SQL
 INSERT INTO `juegos` (`id`, `nombre`, `genero`, `precio`, `año`, `material`, `descripcion`, `imagen`, `desarrollador`) VALUES
